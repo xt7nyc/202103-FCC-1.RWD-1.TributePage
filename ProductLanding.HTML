@@ -1,0 +1,98 @@
+<style>
+    /*using the same color and formats for entire page with survey form*/
+    body {
+        background-color: rgba(172, 165, 182, 0.5); /*full page background*/
+        font-family: Arial, Helvetica, sans-serif; /*full page font fam*/
+        color:rgba(56, 15, 109, 0.9); /*full page font color*/
+        text-align: center;
+    }
+    /*User Story #13: The navbar should always be at the top of the viewport.*/
+    /*ref:https://forum.freecodecamp.org/t/how-to-keep-a-navbar-at-the-top-of-my-viewport/210458/6*/
+    #nav-bar {
+        padding: 3px;
+        background-color: rgba(100, 53, 167, 0.7);
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: fixed;
+    }
+    #header-img {
+        width: 100%;
+        opacity: 0.3;
+        align-self: left;
+    }
+    .nav-link {
+        color: white;
+        margin-right: 5px;
+        text-align: right;
+    }
+    #video {
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+    }
+    /*User Story #14: My product landing page should have at least one media query.*/
+    @media (max-width: 3240px) {
+        body {
+            opacity: 0.9;
+        }
+    }
+    /*User Story #15: My product landing page should utilize CSS flexbox at least once.*/
+    #options {
+        display: flex;
+        flex-direction: row;
+    }
+</style>
+<!--User Story #1: My product landing page should have a header element with a corresponding id="header".-->
+<header id='header'>
+    <!--User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.-->
+    <img id='header-img' src='https://live.staticflickr.com/1449/26660706142_d9862e9377_b.jpg'>
+    <!--User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".-->
+    <nav id='nav-bar'>
+        <!--User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.-->
+        <!--User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.-->
+        <ul>
+            <a href='#features' class='nav-link'>Features</a>
+            <a href='#options' class='nav-link'>Products</a>
+            <a href='#about' class='nav-link'>About Us</a>
+            <a href='#contact' class='nav-link'>Contact Us</a>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id='features'>
+        <!--User Story #6: I can watch an embedded product video with id="video".-->
+        <!--convert 'https://www.youtube.com/watch?v=UXrYV2-Ouz8' to 'https://www.youtube-nocookie.com/embed/UXrYV2-Ouz8?rel=0&controls=0&showinfo=0'-->
+        <!--convert url from 'https://youtu.be/y8Yv4pnO7qc'-->
+        <!--to 'https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0'-->
+        <iframe id='video' src='https://www.youtube-nocookie.com/embed/UXrYV2-Ouz8?rel=0&controls=0&showinfo=0' height='500' width='1000' allowfullscreen></iframe>
+    </section>
+    <section id='options'></section>
+    <section id='about'></section>
+    <section id='contact'>
+        <!--User Story #7: My landing page has a form element with a corresponding id="form".-->
+        <form id='form'>
+            <p>Want to know more? Enter your email below to get our newsletter updates!</p>
+            <!--User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.-->
+            <!--User Story #9: The #email input field should have placeholder text to let the user know what the field is for.-->
+            <!--User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.-->
+            <input id='email' type='email' placeholder="Please enter your email address here.">
+            <!--User Story #11: Within the form, there is a submit input with a corresponding id="submit".-->
+            <!--User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).-->
+            <button action='https://www.freecodecamp.com/email-submit' id='submit'>Send me newsletter</button>
+        </form>
+        <p>Or you can reach out to us~</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <div id='copyright'>
+        <p class='copyright'>&copy; Xavier T. reserves the copyright and the right of explanation.</p>
+        <p class='copyright'>All image/pictorial contents on this page are obtain from creativecommons under <a href='https://www.google.com/imghp?hl=en&ogbl'>Google Images</a>.</p>
+        <p class='copyright'>All video contents on this page are obtain from creativecommons under <a href='https://www.youtube.com'>Youtube</a>.</p>
+    </div>
+</footer>
