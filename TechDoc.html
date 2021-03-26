@@ -1,0 +1,76 @@
+<style>
+    code {
+        background: rgb(233, 233, 233);
+        color: red;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #header-output {
+        border-style: solid;
+        border-color: rgb(233, 233, 233);
+        border-radius: 10px;
+        width: fit-content;
+    }
+</style>
+<!--User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).-->
+<main id='main-doc'>
+    <!--User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.-->
+    <!--User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").-->
+    <!--User Story #6: The .main-section elements should contain at least 5 code elements total (not each).-->
+    <!--User Story #7: The .main-section elements should contain at least 5 li items total (not each).-->
+    <section class='main-section' id='sec1'>
+        <!--User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section.-->
+        <header>Introduction to HTML</header>
+        <!--User Story #5: The .main-section elements should contain at least 10 p elements total (not each).-->
+        <p>HTML is a marking language; it can be used to write HTML files containing variety of HTML <strong>elements</strong>.
+        <p>For example, <code>&lt;p&gt;</code> is an element standing for 'paragraphs, which are often used to hold text contents.'</p>
+        <p>Let's try writing the classical 'Hello World!' in HTML!</p>
+        <pre>
+            <code>&lt;p&gt;Hello World!&lt;/p&gt;</code> <!--use '&lt' for '<' and '&gt' for '>'-->
+        </pre>
+        <li><code>&lt;p&gt;</code> is the opening paragraph tag; it starts a p element.</li>
+        <li><code>&lt;/p&gt;</code> is the closing paragraph tag; its ends up a p element.</li>
+        <li>Any content put in between opening and closing tags, i.e. <code>Hello World!</code> in our case, belongs to the element.</li>
+    </section>
+    <section class='main-section' id='sec2'>
+        <header>Header Levels</header>
+        <p><code>h1</code> to <code>h6</code> are six levels of headings in HTML.</p>
+        <p>By default, the font size and font weight are decreasing from <code>h1</code> to <code>h6</code>, we can make that customized though.</p>
+        <pre>
+            <code>&lt;h1&gt;This is a level-1 header.&lt;/h1&gt;</code>
+            <code>&lt;h2&gt;This is a level-2 header.&lt;/h2&gt;</code>
+            <code>&lt;h3&gt;This is a level-3 header.&lt;/h3&gt;</code>
+            <code>&lt;h4&gt;This is a level-4 header.&lt;/h4&gt;</code>
+            <code>&lt;h5&gt;This is a level-5 header.&lt;/h5&gt;</code>
+            <code>&lt;h6&gt;This is a level-6 header.&lt;/h6&gt;</code> <!--use <pre> to add line break automatically-->
+        </pre>
+        <p>The output of the code above is:</p>
+        <div id='header-output'>
+            <h1>This is a level-1 header.</h1>
+            <h2>This is a level-2 header.</h2>
+            <h3>This is a level-3 header.</h3>
+            <h4>This is a level-4 header.</h4>
+            <h5>This is a level-5 header.</h5>
+            <h6>This is a level-6 header.</h6>
+        </div>
+    </section>
+    <section class='main-section' id='sec3'>
+        <header>Header Description</header>
+        <p></p>
+        <p></p>
+        <li></li>
+        <li></li>
+        <code></code>
+    </section>
+    <section class='main-section' id='sec4'>
+        <header>Header Description</header>
+        <p></p>
+        <p></p>
+        <code></code>
+    </section>
+    <section class='main-section' id='sec5'>
+        <header>Header Description</header>
+        <p></p>
+        <p></p>
+        <code></code>
+    </section>
+</main>
