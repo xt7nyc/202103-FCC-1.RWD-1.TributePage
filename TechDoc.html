@@ -55,22 +55,47 @@
     </section>
     <section class='main-section' id='sec3'>
         <header>Embed an image in HTML</header>
-        <p></p>
-        <p></p>
-        <li></li>
-        <li></li>
+        <p>We can embed an image from external resource with an <code>img</code> element and assign the url to its <code>src</code> attribute.</p>
+        <pre>
+            <code>&lt;img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/300px-Wikipedia-logo-v2.svg.png' alt='wiki-logo'&gt;</code>
+        </pre>
+        <br>
+        <p>The output of the code above is:</p>
+        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/300px-Wikipedia-logo-v2.svg.png'>
+        <li>You might note that there's no closing <code>img</code> tag. Because <code>img</code> is a self-closing element.</li>
+        <li>Also, there's an <code>alt</code> attribute above; often we need an <strong>alternative</strong> text as a description of the image.</li>
         <code></code>
     </section>
     <section class='main-section' id='sec4'>
         <header>Embed a (url) link in HTML</header>
-        <p></p>
-        <p></p>
-        <code></code>
+        <p>Now let's try to add a url link in the webpage.</p>
+        <p>We can do this with an anchor(<code>a</code>) element.</p>
+        <pre>
+            <code>&lt;a href='https://en.wikipedia.org/wiki/Wikipedia' target='_blank'&gt;Wikipedia&lt;/a&gt;</code>
+        </pre>
+        <p>The output of the code above is:</p>
+        <a href='https://en.wikipedia.org/wiki/Wikipedia' target='_blank'>Wikipedia</a>
+        <p>The text between the anchor tags (Wikipedia) will be displayed.</p>
+        <p>And the <code>target</code> attribute with a value of <code>_blank</code> will make the page opened in a new browser tab.</p>
     </section>
     <section class='main-section' id='sec5'>
-        <header>Adjust the size of an element</header>
-        <p></p>
-        <p></p>
-        <code></code>
+        <header>Create an input in HTML</header>
+        <p>There are types of inputs in HTML. Some frequently used ones are:</p>
+        <ul>
+            <li><strong>Text field</strong>, for users to enter text information;</li>
+            <li><strong>Radio button</strong>, for users to select one of multiple options.</li>
+            <li><strong>Checkbox</strong>, for users to select more than one of multiple options.</li>
+            <li>A <code>type</code> attribute is required to indicate which kind of input is to be used.</li>
+            <li>Often we need a <code>label</code> element to provide a short description for input fields.</li>
+            <li>If an input is mandatory, use <code>required</code> to indicate.</li>
+            <li>We can also use a <code>placeholder</code> to give users a hint regarding what to enter.</li>
+        </ul>
+        <pre>
+            <code>&lt;label&gt;Name&lt;/label&gt;</code>
+            <code>&lt;input type='text' placeholder='Your name'&gt;</code>
+        </pre>
+        <p>The output of the code above is:</p>
+        <label>Name</label>
+        <input type='text' placeholder="Your name">
     </section>
 </main>
